@@ -9,24 +9,14 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>rabbitmqproducer</artifactId>
-    <packaging>jar</packaging>
-    <name>rabbitmqproducer</name>
+    <artifactId>common</artifactId>
+    <name>common</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-amqp</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>bob.spring</groupId>
-            <artifactId>common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
     </dependencies>
 
     <build>

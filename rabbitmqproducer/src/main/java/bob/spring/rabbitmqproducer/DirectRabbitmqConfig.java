@@ -9,14 +9,16 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import javax.annotation.Resource;
+
 @Configuration
 public class DirectRabbitmqConfig {
-    @Autowired
+    @Resource
     private RabbitmqConfig rabbitmqConfig;
 
     @Bean
     public Queue getDemoDirectQueue() {
-        return new Queue(rabbitmqConfig.getDemoQueueName(), true, false, false);
+        return new Queue(rabbitmqConfig.getDemoQueueName(), false, false, false);
     }
 
     @Bean

@@ -1,13 +1,20 @@
 package bob.spring.rabbitmqproducer;
 
+import bob.spring.common.RabbitmqConfig;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import javax.annotation.Resource;
 
 @SpringBootTest
 class RabbitmqproducerApplicationTests {
+    @Resource
+    public RabbitmqConfig rabbitmqConfig;
 
     @Test
-    void contextLoads() {
+    public void testConfig() {
+        System.out.println(rabbitmqConfig.getDemoExchangeName());
     }
 
 }

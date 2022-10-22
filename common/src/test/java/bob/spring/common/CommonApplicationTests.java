@@ -11,8 +11,6 @@ class CommonApplicationTests {
 
     @Test
     void testRabbitmqConfig() {
-        System.out.println(rabbitmqConfig.getRabbitmqServerUrl());
-        System.out.println(rabbitmqConfig.getRabbitmqServerPort());
         System.out.println(rabbitmqConfig.getDemoQueueName());
         System.out.println(rabbitmqConfig.getDemoExchangeName());
     }

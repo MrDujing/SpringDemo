@@ -24,7 +24,7 @@
         </dependency>
         <dependency>
             <groupId>bob.spring</groupId>
-            <artifactId>common</artifactId>
+            <artifactId>rabbitmqcommon</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>

@@ -9,8 +9,8 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <artifactId>common</artifactId>
-    <name>common</name>
+    <artifactId>rabbitmqcommon</artifactId>
+    <name>rabbitmqcommon</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>

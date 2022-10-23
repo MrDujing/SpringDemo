@@ -1,8 +1,7 @@
 package bob.spring.rabbitmqproducer;
 
-import bob.spring.common.RabbitmqConfig;
+import bob.spring.rabbitmqcommon.RabbitmqConfig;
 import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import javax.annotation.Resource;

@@ -1,11 +1,10 @@
 package bob.spring.rabbitmqproducer;
 
-import bob.spring.common.RabbitmqConfig;
+import bob.spring.rabbitmqcommon.RabbitmqConfig;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
 import org.springframework.amqp.core.DirectExchange;
 import org.springframework.amqp.core.Queue;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

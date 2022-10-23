@@ -1,8 +1,7 @@
 package bob.spring.rabbitmqproducer;
 
-import bob.spring.common.RabbitmqConfig;
+import bob.spring.rabbitmqcommon.RabbitmqConfig;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;

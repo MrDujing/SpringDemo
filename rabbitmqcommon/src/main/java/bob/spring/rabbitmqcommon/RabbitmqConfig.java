@@ -27,11 +27,17 @@ public class RabbitmqConfig {
         return env.getProperty("DEMO_EXCHANGE_NAME");
     }
 
-    public String getDemoRoutingKey() {return env.getProperty("DEMO_ROUTING_KEY");}
+    public String getDemoRoutingKey() {
+        return env.getProperty("DEMO_ROUTING_KEY");
+    }
 
-    public String getRabbitmqServerName() {return env.getProperty("RABBITMQ_SERVER_NAME");}
+    public String getRabbitmqServerName() {
+        return env.getProperty("RABBITMQ_SERVER_NAME");
+    }
 
-    public String getRabbitmqServerPassWORD() {return env.getProperty("RABBITMQ_SERVER_PASSWORD");}
+    public String getRabbitmqServerPassWORD() {
+        return env.getProperty("RABBITMQ_SERVER_PASSWORD");
+    }
 
 
 }

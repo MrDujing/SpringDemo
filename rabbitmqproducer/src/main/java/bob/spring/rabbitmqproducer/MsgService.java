@@ -12,7 +12,7 @@ import java.util.Map;
 import java.util.UUID;
 
 @Service
-public class MsgService implements RabbitMQService{
+public class MsgService implements RabbitMQService {
     private static SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
     @Resource
     private RabbitTemplate rabbitTemplate;

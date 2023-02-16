@@ -22,7 +22,7 @@ public class DirectRabbitmqConfig {
 
     @Bean
     public DirectExchange getDemoExchange() {
-        return new DirectExchange(rabbitmqConfig.getDemoExchangeName(),true, false);
+        return new DirectExchange(rabbitmqConfig.getDemoExchangeName(), true, false);
     }
 
     @Bean

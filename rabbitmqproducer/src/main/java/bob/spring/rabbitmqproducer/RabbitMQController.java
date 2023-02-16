@@ -11,7 +11,7 @@ public class RabbitMQController {
     private RabbitMQService rabbitMQService;
 
     @PostMapping("/sendMsg")
-    public String sendMsg(@RequestParam(name = "msg") String msg){
+    public String sendMsg(@RequestParam(name = "msg") String msg) {
         return rabbitMQService.sendMsg(msg);
     }
 }

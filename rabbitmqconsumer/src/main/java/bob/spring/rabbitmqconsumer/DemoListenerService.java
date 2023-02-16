@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 public class DemoListenerService implements ChannelAwareMessageListener {
 
     @Override
-    public void onMessage(Message message, Channel channel){
+    public void onMessage(Message message, Channel channel) {
         byte[] body = message.getBody();
         System.out.println("Receive msg: " + new String(body));
     }

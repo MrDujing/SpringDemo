@@ -2,6 +2,7 @@ spring:
   profiles:
     active: dev
 
+
 ---
 spring:
   profiles: prod
@@ -24,3 +25,8 @@ spring:
       uri: http://localhost:3302
       label: master
       profile: dev
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest

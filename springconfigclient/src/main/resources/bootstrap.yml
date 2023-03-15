@@ -2,6 +2,14 @@ spring:
   profiles:
     active: dev
 
+eureka:
+  client:
+    serviceUrl:
+      register-with-eureka: true
+      fetch-registry: true
+      defaultZone: http://localhost:3000/eureka/
+  instance:
+    preferIpAddress: true
 
 ---
 spring:
@@ -10,9 +18,12 @@ spring:
     name: springconfigclient
   cloud:
     config:
-      uri: http://localhost:3302
+      #uri: http://localhost:3302
       label: master
       profile: prod
+      discovery:
+        enabled: true
+        service-id: springconfigserver
 
 
 ---
@@ -22,9 +33,12 @@ spring:
     name: springconfigclient
   cloud:
     config:
-      uri: http://localhost:3302
+      #uri: http://localhost:3302
       label: master
       profile: dev
+      discovery:
+        enabled: true
+        service-id: springconfigserver
   rabbitmq:
     host: rabbitmq
     port: 5672

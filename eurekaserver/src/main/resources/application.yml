@@ -1,15 +1,14 @@
 server:
-  port: 8761
-
-spring:
-  application:
-    name: eurekaserver
-
+  port: 3000
 eureka:
   instance:
-    hostname: localhost
+    hostname: eureka-center
+    appname: registry-center
   client:
-    registerWithEureka: true
-    fetchRegistry: true
+    registerWithEureka: false # 单点的时候设置为 false 禁止注册自身
+    fetchRegistry: false
     serviceUrl:
-      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+      defaultZone: http://localhost:3000/eureka
+  server:
+    enableSelfPreservation: true
+    evictionIntervalTimerInMs: 4000

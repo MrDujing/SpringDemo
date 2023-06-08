@@ -26,6 +26,8 @@
         <module>HystrixRestProducer</module>
         <module>HystrixRestConsumer</module>
         <module>TurbineServer</module>
+        <module>TrubineConsumerRibbon</module>
+        <module>TrubineConsumerRibbon2</module>
     </modules>
 
     <properties>

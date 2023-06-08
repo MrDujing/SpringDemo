@@ -25,6 +25,7 @@
         <module>eurekaserver</module>
         <module>HystrixRestProducer</module>
         <module>HystrixRestConsumer</module>
+        <module>TurbineServer</module>
     </modules>
 
     <properties>

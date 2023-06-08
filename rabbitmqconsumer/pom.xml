@@ -6,7 +6,7 @@
     <parent>
         <groupId>bob.spring</groupId>
         <artifactId>springdemo</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <version>0.0.1</version>
     </parent>
 
     <artifactId>rabbitmqconsumer</artifactId>
@@ -25,7 +25,7 @@
         <dependency>
             <groupId>bob.spring</groupId>
             <artifactId>rabbitmqcommon</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>0.0.1</version>
         </dependency>
         <dependency>
             <groupId>com.alibaba</groupId>

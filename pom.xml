@@ -23,6 +23,8 @@
         <module>springconfigclient</module>
         <module>eurekaclient</module>
         <module>eurekaserver</module>
+        <module>HystrixRestProducer</module>
+        <module>HystrixRestConsumer</module>
     </modules>
 
     <properties>
